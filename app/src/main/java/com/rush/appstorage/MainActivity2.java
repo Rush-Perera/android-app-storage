@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
 //        edit.apply();
 
         SharedPreferences preferences = getSharedPreferences("data", Context.MODE_PRIVATE);
-        String name = preferences.getString("name","Default value");
+        String name = preferences.getString("name","default value");
 
         TextView view = findViewById(R.id.textView);
         view.setText(name);
